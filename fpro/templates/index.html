@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>fpro</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static "main.css" %}">
+  </head>
+  <body>
+    <h1>First one!</h1>
+    <form class="" action="{% url 'result' %}">{% csrf_token %}
+      <input type="text" name="user_input">
+      <input type="submit" value="Click Me">
+    </form>
+  </body>
+</html>
